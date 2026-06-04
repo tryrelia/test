@@ -1,0 +1,16 @@
+{
+  "stack": "next-prisma-zod",
+  "version": "1.0",
+  "scripts": {
+    "dev": "next dev",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint",
+    "build": "next build"
+  },
+  "qualityGates": ["typecheck", "lint", "build"],
+  "dataLayer": "prisma",
+  "apiPattern": "next-route-handlers",
+  "validationPattern": "zod",
+  "allowedLibraries": ["prisma", "zod", "shadcn-ui", "lucide-react", "next-auth"],
+  "forbiddenPatterns": ["raw SQL", "fetch in component without server action"]
+}
